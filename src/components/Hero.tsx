@@ -34,9 +34,9 @@ export const Hero = ({ language, onContactClick }: HeroProps) => {
           <Button 
             size="lg" 
             onClick={onContactClick}
-            className="relative bg-white/95 text-primary hover:bg-white shadow-elegant hover:shadow-glow transition-spring group px-10 py-7 text-lg rounded-2xl font-bold overflow-hidden"
+            className="relative bg-gradient-accent text-background hover:shadow-glow shadow-elegant transition-spring group px-10 py-7 text-lg rounded-2xl font-bold overflow-hidden"
           >
-            <span className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-10 transition-smooth"></span>
+            <span className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-smooth"></span>
             <span className="relative">{t.cta}</span>
             <ArrowRight className="relative ml-3 h-5 w-5 group-hover:translate-x-2 transition-spring" />
           </Button>

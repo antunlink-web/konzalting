@@ -30,28 +30,28 @@ export const About = ({ language }: AboutProps) => {
                 {t.description}
               </p>
               <div className="flex flex-wrap gap-3 pt-6">
-                <div className="group px-6 py-3 bg-card backdrop-blur-xl text-foreground rounded-2xl text-sm font-bold border border-border shadow-card hover:shadow-elegant hover:border-accent/30 transition-spring">
+                <div className="group px-6 py-3 bg-card/80 backdrop-blur-xl text-foreground rounded-2xl text-sm font-bold border border-accent/30 shadow-card hover:shadow-glow hover:border-accent/60 transition-spring">
                   <span className="group-hover:text-accent transition-smooth">🇭🇷 Hrvatski</span>
                 </div>
-                <div className="group px-6 py-3 bg-card backdrop-blur-xl text-foreground rounded-2xl text-sm font-bold border border-border shadow-card hover:shadow-elegant hover:border-accent/30 transition-spring">
+                <div className="group px-6 py-3 bg-card/80 backdrop-blur-xl text-foreground rounded-2xl text-sm font-bold border border-accent/30 shadow-card hover:shadow-glow hover:border-accent/60 transition-spring">
                   <span className="group-hover:text-accent transition-smooth">🇬🇧 English</span>
                 </div>
-                <div className="group px-6 py-3 bg-card backdrop-blur-xl text-foreground rounded-2xl text-sm font-bold border border-border shadow-card hover:shadow-elegant hover:border-accent/30 transition-spring">
+                <div className="group px-6 py-3 bg-card/80 backdrop-blur-xl text-foreground rounded-2xl text-sm font-bold border border-accent/30 shadow-card hover:shadow-glow hover:border-accent/60 transition-spring">
                   <span className="group-hover:text-accent transition-smooth">🇷🇺 Русский</span>
                 </div>
               </div>
             </div>
             <div className="order-1 md:order-2 flex justify-center animate-fade-in">
               <div className="relative group">
-                <div className="absolute inset-0 bg-gradient-accent rounded-[2rem] blur-3xl opacity-20 group-hover:opacity-35 transition-spring"></div>
+                <div className="absolute inset-0 bg-gradient-accent rounded-[2rem] blur-3xl opacity-30 group-hover:opacity-50 transition-spring"></div>
                 <div className="absolute -inset-0.5 bg-gradient-accent rounded-[2rem] opacity-0 group-hover:opacity-100 transition-spring blur-sm"></div>
                 <div className="relative">
                   <img
                     src={profileImage}
                     alt="Profile"
-                    className="relative w-full max-w-md rounded-[2rem] shadow-elegant border-2 border-white/10 group-hover:border-accent/20 transition-spring"
+                    className="relative w-full max-w-md rounded-[2rem] shadow-elegant border-2 border-accent/20 group-hover:border-accent/40 transition-spring"
                   />
-                  <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-spring"></div>
+                  <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-t from-background/30 to-transparent opacity-0 group-hover:opacity-100 transition-spring"></div>
                 </div>
               </div>
             </div>
