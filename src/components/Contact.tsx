@@ -81,20 +81,20 @@ export const Contact = ({ language }: ContactProps) => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-gradient-hero relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-overlay"></div>
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
+    <section id="contact" className="py-32 bg-gradient-hero relative overflow-hidden">
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjAzIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-50"></div>
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="max-w-2xl mx-auto">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-5xl md:text-6xl font-bold text-primary-foreground mb-6 tracking-tight">
               {t.title}
             </h2>
-            <p className="text-lg text-primary-foreground/80">
+            <p className="text-xl text-primary-foreground/80 font-light">
               {t.description}
             </p>
           </div>
 
-          <div className="bg-card/95 backdrop-blur-sm rounded-2xl shadow-elegant p-8 animate-scale-in">
+          <div className="bg-card/90 backdrop-blur-xl rounded-3xl shadow-elegant border border-white/10 p-10 animate-scale-in">
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                 <FormField
@@ -102,9 +102,13 @@ export const Contact = ({ language }: ContactProps) => {
                   name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>{t.name}</FormLabel>
+                      <FormLabel className="text-base font-semibold">{t.name}</FormLabel>
                       <FormControl>
-                        <Input placeholder={t.name} {...field} />
+                        <Input 
+                          placeholder={t.name} 
+                          {...field} 
+                          className="h-12 rounded-xl bg-background/50 border-border/50 focus:border-accent transition-smooth"
+                        />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -116,9 +120,14 @@ export const Contact = ({ language }: ContactProps) => {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>{t.email}</FormLabel>
+                      <FormLabel className="text-base font-semibold">{t.email}</FormLabel>
                       <FormControl>
-                        <Input type="email" placeholder={t.email} {...field} />
+                        <Input 
+                          type="email" 
+                          placeholder={t.email} 
+                          {...field} 
+                          className="h-12 rounded-xl bg-background/50 border-border/50 focus:border-accent transition-smooth"
+                        />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -130,11 +139,11 @@ export const Contact = ({ language }: ContactProps) => {
                   name="message"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>{t.message}</FormLabel>
+                      <FormLabel className="text-base font-semibold">{t.message}</FormLabel>
                       <FormControl>
                         <Textarea
                           placeholder={t.message}
-                          className="min-h-[150px]"
+                          className="min-h-[180px] rounded-xl bg-background/50 border-border/50 focus:border-accent transition-smooth resize-none"
                           {...field}
                         />
                       </FormControl>
@@ -147,7 +156,7 @@ export const Contact = ({ language }: ContactProps) => {
                   type="submit"
                   size="lg"
                   disabled={isSubmitting}
-                  className="w-full bg-gradient-accent hover:shadow-glow transition-all duration-300"
+                  className="w-full h-14 bg-gradient-accent hover:shadow-glow transition-spring text-lg font-semibold rounded-xl"
                 >
                   <Send className="mr-2 h-5 w-5" />
                   {isSubmitting ? t.sending : t.send}

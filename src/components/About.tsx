@@ -9,41 +9,43 @@ export const About = ({ language }: AboutProps) => {
   const t = translations[language].about;
 
   return (
-    <section id="about" className="py-24 bg-gradient-card">
-      <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="order-2 md:order-1 space-y-6 animate-fade-in">
+    <section id="about" className="py-32 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-overlay"></div>
+      <div className="container mx-auto px-6 relative">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="order-2 md:order-1 space-y-8 animate-fade-in">
               <div>
-                <p className="text-accent font-semibold text-sm uppercase tracking-wider mb-2">
+                <p className="text-accent font-bold text-sm uppercase tracking-widest mb-3">
                   {t.subtitle}
                 </p>
-                <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+                <h2 className="text-5xl md:text-6xl font-bold text-foreground tracking-tight">
                   {t.title}
                 </h2>
               </div>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-xl text-muted-foreground leading-relaxed font-light">
                 {t.description}
               </p>
-              <div className="flex flex-wrap gap-3 pt-4">
-                <div className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium">
+              <div className="flex flex-wrap gap-3 pt-6">
+                <div className="px-5 py-2.5 bg-gradient-card backdrop-blur-sm text-primary rounded-xl text-sm font-semibold border border-border shadow-card hover:shadow-elegant transition-smooth">
                   🇭🇷 Hrvatski
                 </div>
-                <div className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium">
+                <div className="px-5 py-2.5 bg-gradient-card backdrop-blur-sm text-primary rounded-xl text-sm font-semibold border border-border shadow-card hover:shadow-elegant transition-smooth">
                   🇬🇧 English
                 </div>
-                <div className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium">
+                <div className="px-5 py-2.5 bg-gradient-card backdrop-blur-sm text-primary rounded-xl text-sm font-semibold border border-border shadow-card hover:shadow-elegant transition-smooth">
                   🇷🇺 Русский
                 </div>
               </div>
             </div>
             <div className="order-1 md:order-2 flex justify-center animate-fade-in">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-accent rounded-2xl blur-2xl opacity-20"></div>
+              <div className="relative group">
+                <div className="absolute inset-0 bg-gradient-accent rounded-3xl blur-3xl opacity-25 group-hover:opacity-40 transition-smooth"></div>
+                <div className="absolute -inset-1 bg-gradient-accent rounded-3xl opacity-20 blur"></div>
                 <img
                   src={profileImage}
                   alt="Profile"
-                  className="relative w-full max-w-md rounded-2xl shadow-elegant hover:shadow-glow transition-shadow duration-500"
+                  className="relative w-full max-w-md rounded-3xl shadow-elegant hover:shadow-glow transition-spring border-2 border-accent/10"
                 />
               </div>
             </div>

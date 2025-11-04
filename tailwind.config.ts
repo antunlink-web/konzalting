@@ -64,6 +64,10 @@ export default {
       },
       transitionProperty: {
         'smooth': 'var(--transition-smooth)',
+        'spring': 'var(--transition-spring)',
+      },
+      backdropBlur: {
+        xs: '2px',
       },
       borderRadius: {
         lg: "var(--radius)",

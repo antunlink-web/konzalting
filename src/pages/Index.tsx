@@ -21,7 +21,7 @@ const Index = () => {
         onLanguageChange={setLanguage}
         onContactClick={scrollToContact}
       />
-      <main className="pt-16">
+      <main className="pt-20">
         <Hero language={language} onContactClick={scrollToContact} />
         <About language={language} />
         <Services language={language} />
