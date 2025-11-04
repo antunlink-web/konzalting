@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Language } from '@/lib/i18n';
 import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
+import { About } from '@/components/About';
 import { Services } from '@/components/Services';
 import { Contact } from '@/components/Contact';
 import { Footer } from '@/components/Footer';
@@ -22,6 +23,7 @@ const Index = () => {
       />
       <main className="pt-16">
         <Hero language={language} onContactClick={scrollToContact} />
+        <About language={language} />
         <Services language={language} />
         <Contact language={language} />
       </main>
