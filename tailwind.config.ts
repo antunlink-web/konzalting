@@ -55,12 +55,13 @@ export default {
         'gradient-hero': 'var(--gradient-hero)',
         'gradient-card': 'var(--gradient-card)',
         'gradient-accent': 'var(--gradient-accent)',
-        'gradient-overlay': 'var(--gradient-overlay)',
+        'gradient-mesh': 'var(--gradient-mesh)',
       },
       boxShadow: {
         'elegant': 'var(--shadow-elegant)',
         'card': 'var(--shadow-card)',
         'glow': 'var(--shadow-glow)',
+        'inner': 'var(--shadow-inner)',
       },
       transitionProperty: {
         'smooth': 'var(--transition-smooth)',

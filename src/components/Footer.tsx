@@ -9,13 +9,14 @@ export const Footer = ({ language }: FooterProps) => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gradient-to-b from-background to-secondary/30 py-12 border-t border-border/50">
-      <div className="container mx-auto px-6">
-        <div className="text-center space-y-3">
-          <p className="text-foreground/70 text-base font-medium">
+    <footer className="relative bg-gradient-to-b from-background via-secondary/20 to-background py-16 border-t border-border/40">
+      <div className="absolute inset-0 bg-gradient-mesh opacity-30"></div>
+      <div className="container mx-auto px-6 relative">
+        <div className="text-center space-y-4">
+          <p className="text-foreground/80 text-base font-semibold tracking-wide">
             © {currentYear}. {t.rights}
           </p>
-          <p className="text-muted-foreground text-sm">
+          <p className="text-muted-foreground text-sm font-medium">
             {t.languages}
           </p>
         </div>
