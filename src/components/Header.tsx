@@ -1,7 +1,7 @@
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { Button } from '@/components/ui/button';
 import { Language, translations } from '@/lib/i18n';
-import { Briefcase } from 'lucide-react';
+import { User } from 'lucide-react';
 
 interface HeaderProps {
   language: Language;
@@ -19,10 +19,10 @@ export const Header = ({ language, onLanguageChange, onContactClick }: HeaderPro
           <div className="flex items-center gap-3">
             <div className="relative h-12 w-12 rounded-2xl bg-gradient-accent flex items-center justify-center shadow-glow/60 transition-spring hover:scale-105 hover:shadow-glow group">
               <div className="absolute inset-0 rounded-2xl bg-gradient-accent opacity-0 group-hover:opacity-100 blur-lg transition-smooth"></div>
-              <Briefcase className="h-6 w-6 text-accent-foreground relative z-10" />
+              <User className="h-6 w-6 text-accent-foreground relative z-10" />
             </div>
-            <span className="font-bold text-xl text-foreground hidden sm:inline tracking-tight">
-              Consulting
+            <span className="font-bold text-xl text-foreground tracking-tight">
+              Antun Palić
             </span>
           </div>
 

@@ -23,7 +23,7 @@ export const Hero = ({ language, onContactClick }: HeroProps) => {
             <p className="text-white/90 font-semibold text-sm tracking-widest uppercase">{t.subtitle}</p>
           </div>
           
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-10 leading-[1.05] tracking-[-0.02em]">
+          <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold text-white mb-10 leading-[1.05] tracking-[-0.02em]">
             {t.title}
           </h1>
           
