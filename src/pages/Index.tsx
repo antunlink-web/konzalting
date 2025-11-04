@@ -8,7 +8,7 @@ import { Contact } from '@/components/Contact';
 import { Footer } from '@/components/Footer';
 
 const Index = () => {
-  const [language, setLanguage] = useState<Language>('en');
+  const [language, setLanguage] = useState<Language>('ru');
 
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
