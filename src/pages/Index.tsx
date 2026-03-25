@@ -1,33 +1,31 @@
-import { useState } from 'react';
-import { Language } from '@/lib/i18n';
-import { Header } from '@/components/Header';
-import { Hero } from '@/components/Hero';
-import { About } from '@/components/About';
-import { Services } from '@/components/Services';
-import { Contact } from '@/components/Contact';
-import { Footer } from '@/components/Footer';
+import { HeroSection } from '@/components/landing/HeroSection';
+import { TrustBar } from '@/components/landing/TrustBar';
+import { AboutSection } from '@/components/landing/AboutSection';
+import { ServicesSection } from '@/components/landing/ServicesSection';
+import { PricingSection } from '@/components/landing/PricingSection';
+import { WhyMeSection } from '@/components/landing/WhyMeSection';
+import { CtaSection } from '@/components/landing/CtaSection';
+import { ContactSection } from '@/components/landing/ContactSection';
+import { StickyWhatsApp } from '@/components/landing/StickyWhatsApp';
+import { LandingHeader } from '@/components/landing/LandingHeader';
+import { LandingFooter } from '@/components/landing/LandingFooter';
 
 const Index = () => {
-  const [language, setLanguage] = useState<Language>('ru');
-
-  const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
-    <div className="min-h-screen">
-      <Header 
-        language={language} 
-        onLanguageChange={setLanguage}
-        onContactClick={scrollToContact}
-      />
-      <main className="pt-20">
-        <Hero language={language} onContactClick={scrollToContact} />
-        <About language={language} />
-        <Services language={language} />
-        <Contact language={language} />
+    <div className="min-h-screen bg-background">
+      <LandingHeader />
+      <main>
+        <HeroSection />
+        <TrustBar />
+        <AboutSection />
+        <ServicesSection />
+        <PricingSection />
+        <WhyMeSection />
+        <CtaSection />
+        <ContactSection />
       </main>
-      <Footer language={language} />
+      <LandingFooter />
+      <StickyWhatsApp />
     </div>
   );
 };
