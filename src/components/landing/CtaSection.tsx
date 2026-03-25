@@ -29,7 +29,7 @@ export const CtaSection = () => {
               asChild
               className="bg-[hsl(200_100%_40%)] text-primary-foreground hover:bg-[hsl(200_100%_35%)] px-8 py-6 text-base rounded-2xl font-bold"
             >
-              <a href="https://t.me/username" target="_blank" rel="noopener noreferrer">
+              <a href="https://t.me/burner85" target="_blank" rel="noopener noreferrer">
                 <Send className="mr-2 h-5 w-5" />
                 Telegram
               </a>
