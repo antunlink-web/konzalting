@@ -80,7 +80,7 @@ export const PricingSection = () => {
                       : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'
                   }`}
                 >
-                  <a href="https://wa.me/385XXXXXXXXX" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/385915122888" target="_blank" rel="noopener noreferrer">
                     <MessageCircle className="mr-2 h-4 w-4" />
                     {plan.cta}
                   </a>
