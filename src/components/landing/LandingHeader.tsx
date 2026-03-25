@@ -36,7 +36,7 @@ export const LandingHeader = () => {
             size="sm"
             className="bg-gradient-accent text-primary-foreground hover:opacity-90 rounded-xl font-semibold"
           >
-            <a href="<a href="https://wa.me/385915122888" target="_blank" rel="noopener noreferrer">" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/385915122888" target="_blank" rel="noopener noreferrer"> target="_blank" rel="noopener noreferrer">" target="_blank" rel="noopener noreferrer">
               Написать
             </a>
           </Button>

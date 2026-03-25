@@ -33,7 +33,7 @@ export const HeroSection = () => {
               asChild
               className="bg-gradient-accent text-primary-foreground hover:opacity-90 shadow-glow/40 px-8 py-6 text-base rounded-2xl font-bold group"
             >
-              <a href="<a href="https://wa.me/385915122888" target="_blank" rel="noopener noreferrer">" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/385915122888" target="_blank" rel="noopener noreferrer"> target="_blank" rel="noopener noreferrer">" target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="mr-2 h-5 w-5" />
                 Написать в WhatsApp
               </a>
