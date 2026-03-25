@@ -1,4 +1,5 @@
-import { User, CheckCircle2 } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
+import profileImage from '@/assets/profile.jpeg';
 
 const points = [
   'Живу и работаю в Хорватии',
@@ -31,9 +32,13 @@ export const AboutSection = () => {
             </ul>
           </div>
           <div className="flex justify-center">
-            <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-3xl bg-gradient-card border border-border/50 flex items-center justify-center shadow-card overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-mesh opacity-50"></div>
-              <User className="h-24 w-24 text-primary/40 relative z-10" />
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-accent rounded-3xl blur-3xl opacity-30 group-hover:opacity-50 transition-all duration-500"></div>
+              <img
+                src={profileImage}
+                alt="Profile"
+                className="relative w-72 h-72 md:w-80 md:h-80 rounded-3xl object-cover border border-border/50 shadow-card"
+              />
             </div>
           </div>
         </div>
