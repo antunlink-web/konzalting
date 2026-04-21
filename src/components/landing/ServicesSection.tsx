@@ -1,4 +1,4 @@
-import { Briefcase, FileText, Languages, Key, HeadphonesIcon } from 'lucide-react';
+import { Briefcase, FileText, Languages, Key, HeadphonesIcon, Home } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const services = [
@@ -26,6 +26,11 @@ const services = [
     icon: HeadphonesIcon,
     title: 'Поддержка бизнеса',
     description: 'Текущая поддержка вашего бизнеса в Хорватии — оптимизация расходов, связь с партнёрами, консультации.',
+  },
+  {
+    icon: Home,
+    title: 'Недвижимость',
+    description: 'Подбор недвижимости для аренды и покупки — от уютных квартир у моря до инвестиционных объектов. Проверка документов, переговоры с владельцами и сопровождение сделки.',
   },
 ];
 
