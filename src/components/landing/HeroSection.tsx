@@ -24,7 +24,7 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-            Без стресса. На русском языке. С местной экспертизой.
+            Без стресса. На русском языке. С пониманием местной системы и бюрократии.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -47,6 +47,19 @@ export const HeroSection = () => {
               Получить консультацию
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
+          </div>
+
+          <div className="mt-10 flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-foreground/70">
+            {[
+              'Живу и работаю в Хорватии',
+              'Работаю с клиентами по всей стране',
+              'Русский / Английский / Хорватский',
+            ].map((item) => (
+              <div key={item} className="flex items-center gap-2">
+                <span className="text-accent">✓</span>
+                <span>{item}</span>
+              </div>
+            ))}
           </div>
         </div>
       </div>
