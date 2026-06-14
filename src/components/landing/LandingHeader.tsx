@@ -35,11 +35,16 @@ export const LandingHeader = () => {
             ))}
           </nav>
 
-          <Button
-            asChild
-            size="sm"
-            className="bg-gradient-accent text-primary-foreground hover:opacity-90 rounded-xl font-semibold"
-          >
+          <div className="flex items-center gap-4">
+            <LanguageSwitcher
+              currentLanguage={language}
+              onLanguageChange={setLanguage}
+            />
+            <Button
+              asChild
+              size="sm"
+              className="bg-gradient-accent text-primary-foreground hover:opacity-90 rounded-xl font-semibold"
+            >
             <a href="https://wa.me/385915122888" target="_blank" rel="noopener noreferrer">
               Написать
             </a>
