@@ -11,6 +11,7 @@ const links = [
 ];
 
 export const LandingHeader = () => {
+  const [language, setLanguage] = useState<Language>('ru');
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/60 backdrop-blur-2xl border-b border-border/30">
       <div className="container mx-auto px-5">
