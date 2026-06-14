@@ -45,10 +45,11 @@ export const LandingHeader = () => {
               size="sm"
               className="bg-gradient-accent text-primary-foreground hover:opacity-90 rounded-xl font-semibold"
             >
-            <a href="https://wa.me/385915122888" target="_blank" rel="noopener noreferrer">
-              Написать
-            </a>
-          </Button>
+              <a href="https://wa.me/385915122888" target="_blank" rel="noopener noreferrer">
+                Написать
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </header>
