@@ -1,5 +1,8 @@
+import { useState } from 'react';
 import { User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { LanguageSwitcher } from '@/components/LanguageSwitcher';
+import { Language } from '@/lib/i18n';
 
 const links = [
   { label: 'Услуги', href: '#services' },
@@ -8,6 +11,7 @@ const links = [
 ];
 
 export const LandingHeader = () => {
+  const [language, setLanguage] = useState<Language>('ru');
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/60 backdrop-blur-2xl border-b border-border/30">
       <div className="container mx-auto px-5">
@@ -31,15 +35,21 @@ export const LandingHeader = () => {
             ))}
           </nav>
 
-          <Button
-            asChild
-            size="sm"
-            className="bg-gradient-accent text-primary-foreground hover:opacity-90 rounded-xl font-semibold"
-          >
-            <a href="https://wa.me/385915122888" target="_blank" rel="noopener noreferrer">
-              Написать
-            </a>
-          </Button>
+          <div className="flex items-center gap-4">
+            <LanguageSwitcher
+              currentLanguage={language}
+              onLanguageChange={setLanguage}
+            />
+            <Button
+              asChild
+              size="sm"
+              className="bg-gradient-accent text-primary-foreground hover:opacity-90 rounded-xl font-semibold"
+            >
+              <a href="https://wa.me/385915122888" target="_blank" rel="noopener noreferrer">
+                Написать
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </header>
