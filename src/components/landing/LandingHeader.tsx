@@ -1,5 +1,8 @@
+import { useState } from 'react';
 import { User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { LanguageSwitcher } from '@/components/LanguageSwitcher';
+import { Language } from '@/lib/i18n';
 
 const links = [
   { label: 'Услуги', href: '#services' },
